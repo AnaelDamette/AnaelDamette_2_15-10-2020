@@ -1,0 +1,86 @@
+@media screen and (max-width:1340px) {
+    #Marseille_container{
+        width:100% !important;
+    }
+    #populaire_container{
+        width:100% !important;
+    }
+}
+/* section{
+    border:solid 2px #000;
+}
+div{
+    border:solid 2px #000; 
+} */
+body{
+    font-family:'Raleway','calibri',sans-serif;
+}
+h2{
+    font-weight:bolder;
+}
+
+.Notation_Container{
+    display:flex;
+    justify-content:start;
+    align-items:start;
+    height:25px;
+}
+.Notation_Container img{
+    max-height: 25px;
+}
+.Hotel-Card-txt{
+    display:flex;
+    flex-direction:column;
+    padding:1em;
+}
+.Hotel-Card-container{
+    display:flex;
+    height:10em;
+    align-items:center;
+    background-color:#fff;
+    border:solid 7px #fff;
+    border-radius:1em;
+    overflow:hidden;
+    margin:20px;
+    min-width:374px;
+    box-shadow:2px 2px 10px rgb(226, 226, 226);
+}
+.Hotel-Card-container:hover{
+    transform: translate(1px,1px)
+
+}
+.Hotel-Card-img-container{
+   height:10em;
+   width:10em;
+   overflow:hidden;
+}
+#Marseille_container{
+    width:62%;
+}
+#populaire_container{
+    width:25%;
+    min-width:500px;
+}
+.Hotels_container{
+    background-color:#f2F2F2;
+    border-radius:1em;
+    padding:2em;
+}
+#populaire_titre{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+#populaire_titre img{
+    height: 40px;
+}
+#section_hebergements{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap-reverse;
+}
+.Hotel_Cards_Wrap_Container{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+}
