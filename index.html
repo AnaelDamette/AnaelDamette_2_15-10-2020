@@ -13,26 +13,46 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <div id="RechercheVille"> 
-                <form>
-                    <img src ="SRC/SVG/map-marker-alt-solid.svg"/>
-                    <input type="text" placeholder="Marseille, France">
-                    <button type="submit">Rechercher</button>
+                <form id="form">
+                    <div id="GPSmarker">
+                        <div id="ImgGPSmarker">
+                            <img src ="SRC/SVG/map-marker-alt-solid.svg"/>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Marseille, France" id="placeholdertext">
+                    <button type="submit" id=buttonrechercher>Rechercher </button>
                 </form>
                 <div id="Filtres">
-                    <p>Filtres</p>
-                    <p><img src="SRC/SVG/money-bill-wave-solid.svg" alt= "Logo Economie"/>Economique</p>
-                    <p><img src="SRC/SVG/child-solid.svg" alt= "Logo Familial"/>Familial</p>
-                    <p><img src="SRC/SVG/heart-solid.svg" alt= "Logo Romantique"/>Romantique</p>   
-                    <p><img src="SRC/SVG/dog-solid.svg" alt= "Logo Animaux"/>Animaux autorisés</p>
+                    <p ><b><a href="&">Filtres</a></b></p>
+                    <div class="Logo_Filtres">
+                            <img src="SRC/SVG/money-bill-wave-solid.svg" alt= "Logo Economie" id="Logo_eco"/>
+                    </div>
+                    <p class="Filtres_txt"><b>Economique</b></p>
+                    
+                    <div class="Logo_Filtres">                        
+                            <img src="SRC/SVG/child-solid.svg" alt= "Logo Familial" id="Logo_fam"/>                      
+                    </div>
+                    <p class="Filtres_txt"><b>Familial</b></p>
+                    <div class="Logo_Filtres">                       
+                            <img src="SRC/SVG/heart-solid.svg" alt= "Logo Romantique" id="Logo_rom"/>                         
+                    </div> 
+                    <p class="Filtres_txt"><b>Romantique</b></p>
+                    <div class="Logo_Filtres">                    
+                        <img src="SRC/SVG/dog-solid.svg" alt= "Logo Animaux" id="Logo_ani" />                          
+                    </div>
+                    <p class="Filtres_txt"><b>Animaux Autorisés</b></p>
                 </div>
             </div>
-            <p><img src="SRC/SVG/info-circle-solid.svg" alt= "Logo Information"/> Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="Information">
+                <img src="SRC/SVG/info-circle-solid.svg" alt= "Logo Information" id="Logo_Inf"/>
+                <p>  Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </div>
         <nav>
             <ul>
-            <li>Hébergements</li>
-            <Li>Activités</Li>
-            <li>S'inscrire</li>
+            <li><a href="#section_hebergements">Hébergements</a></li>
+            <Li><a href="#section_activités">Activités</a></Li>
+            <li><a href= "incription">S'inscrire</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +62,7 @@
             <div class = "Hotel_Cards_Wrap_Container">
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Auberge la Cannebière.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Auberge la Cannebière.jpg" alt="image Auberde la Cannebière">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Auberge de la Cannebière</b></p>
@@ -58,7 +78,7 @@
                 </div>
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Hôtel du port.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel du port.jpg" alt="image Hôtel du port">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Hôtel du port</b></p>
@@ -74,7 +94,7 @@
                 </div>
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Hôtel Les mouettes.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel Les mouettes.jpg" alt="image Hôtel Les mouettes">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Hôtel Les mouettes</b></p>
@@ -90,7 +110,7 @@
                 </div>
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Hôtel de la mer.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel de la mer.jpg" alt="image Hôtel de la mer">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Hôtel de la mer</b></p>
@@ -106,7 +126,7 @@
                 </div>
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Auberge Le Panier.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Auberge Le Panier.jpg" alt="image Auberge le Panier">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Auberge Le Panier</b></p>
@@ -122,7 +142,7 @@
                 </div>
                 <div class="Hotel_Card_container">
                     <div class="Hotel_Card_img_container">
-                        <img src="src/jpeg/Hébergements/Hôtel chez Amina.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel chez Amina.jpg" alt="image Hôtel chez Anima">
                     </div>
                     <div class="Hotel_Card_txt">
                         <p><b>Hôtel Chez Anima</b></p>
@@ -147,7 +167,7 @@
             <div class = "Hotel_Card_Wrap_Container_populaire">
                 <div class="Hotel_Card_container_populaire">
                     <div class="Hotel_Card_img_container_populaire">
-                        <img src="src/jpeg/Hébergements/Hôtel le soleil du matin.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel le soleil du matin.jpg" alt="image Hôtel le soleil du matin">
                     </div>
                     <div class="Hotel_Card_txt_populaire">
                         <p><b>Hôtel Le soleil du matin</b></p>
@@ -163,7 +183,7 @@
                 </div>
                 <div class="Hotel_Card_container_populaire">
                     <div class="Hotel_Card_img_container_populaire">
-                        <img src="src/jpeg/Hébergements/Au coeur de l'eau Chambre d'hôtes.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Au coeur de l'eau Chambre d'hôtes.jpg" alt="image Au coeur de l'eau Chambre d'hôtes">
                     </div>
                     <div class="Hotel_Card_txt_populaire">
                         <p><b>Au coeur de l'eau Chambre d'hôtes</b></p>
@@ -179,11 +199,11 @@
                 </div>
                 <div class="Hotel_Card_container_populaire">
                     <div class="Hotel_Card_img_container_populaire">
-                        <img src="src/jpeg/Hébergements/Hôtel tout bleu et Blanc.jpg" alt="image hotel populaire 1">
+                        <img src="src/jpeg/Hébergements/Hôtel tout bleu et Blanc.jpg" alt="image Hôtel tout bleu et Blanc" href="&">
                     </div>
                     <div class="Hotel_Card_txt_populaire">
-                        <p><b>Hôtel Tout bleu et blanc</b></p>
-                        <p>Nuit à partir de 68€</p>
+                        <p href="&"><b>Hôtel Tout bleu et blanc</b></p>
+                        <p href="&">Nuit à partir de 68€</p>
                         <div class="Notation_Container">
                             <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
                             <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
@@ -195,26 +215,52 @@
                 </div>
         </aside>
     </section>
-    <section id = section_activités>
-        <h2>Activités à Marseille</h2>
+    <section id = "section_activités">
+        <h2 id="Activité_titre">Activités à Marseille</h2>
+        <div id="listes_activités">
+                <div class="Activités_à_Marseille_Grande" href="&">
+                    <img src="SRC/jpeg/activité/Vieux Port.jpg">
+                    <p class="Activités_txt"><b>Vieux Port</b></p>
+                </div>
+                <div class="Activités_à_Marseille_Moyenne" href="&">
+                    <img src="SRC/jpeg/activité/Fort de Pomègues.jpg">
+                    <p class="Activités_txt"><b>Fort de Pomègues</b></p>
+                </div>
+                <div class="Activités_à_Marseille_Petite" href="&">
+                    <img src="SRC/jpeg/activité/Îles du Frioul.jpg">
+                    <p class="Activités_txt"><b>Îles du Frioul</b></p>
+                </div>
+                <div class="Activités_à_Marseille_Grande" href="&">
+                    <img src="SRC/jpeg/activité/Parc National des Calanques.jpg">
+                    <p class="Activités_txt"><b>Parc National des Calanques</b></p>
+                </div>
+                <div class="Activités_à_Marseille_Petite" href="&">
+                    <img src="SRC/jpeg/activité/Notre-Dame-de-la-garde.jpg">
+                    <p class="Activités_Txt"><b>Notre-Dame-de-la-Garde</b></p>
+                </div>
+                <div class="Activités_à_Marseille_Moyenne" href="&">
+                    <img src="SRC/jpeg/activité/Parc Longchamp.jpg">
+                    <p class="Activités_txt"><b>Parc Longchamp</b></p>
+                </div>
+        </div>    
     </section>
     <footer>
         <div id= "footer">
             <h3>A propos</h3>
                <ul>
-                   <li>Fonctionnement du site</li>
-                   <li>Condition gnérales de vente</li>
-                   <li>Donnée et confidentialité</li>
+                   <li href="&">Fonctionnement du site</li>
+                   <li href="&">Condition gnérales de vente</li>
+                   <li href="&">Donnée et confidentialité</li>
                </ul>
             <h3>Nos hébergements</h3>
                <ul>
-                   <li>Chartre qualité</li>
-                   <li>Soumettre votre hôtel</li>
+                   <li href="&">Chartre qualité</li>
+                   <li href="&">Soumettre votre hôtel</li>
                </ul>
             <h3>Assistance</h3>
                <ul>
-                   <li>Centre d'aide</li>
-                   <li>Nous contacter</li>
+                   <li href="&">Centre d'aide</li>
+                   <li href="&">Nous contacter</li>
                </ul>
         </div>
     </footer>
