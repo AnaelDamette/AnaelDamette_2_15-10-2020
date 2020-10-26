@@ -28,6 +28,19 @@ nav{
     display : flex;
     flex-direction: row-reverse;
 }
+nav ul {
+    display: flex;
+}
+nav li{
+    margin-right: 15px;
+}
+nav a:hover{
+    transform: translate(1px,1px);
+    color: #0065fc;
+}
+#inscription {
+    color : #0065fc;
+}
 #form{
     display: flex;
     height: 75px;
@@ -48,6 +61,7 @@ nav{
 #ImgGPSmarker {
     display : flex;
     height: 25px;
+    width : 25px;
 
 }
 #placeholdertext {
@@ -91,25 +105,25 @@ nav{
     justify-content: center;
 }
 #Logo_fam{
-    height : 20px;
-    width : 20px;
+    height : 15px;
+    width : 15px;
     align-self: center;
     justify-self: center;
 }
 #Logo_eco{
-    height : 20px;
-    width : 20px;
+    height : 15px;
+    width : 15px;
     align-self: center;
     justify-content: center;
 }
 #Logo_rom{
-    height : 20px;
-    width : 20px;
+    height : 15px;
+    width : 15px;
     align-self: center;
 }
 #Logo_ani{
-    height : 20px;
-    width : 20px;
+    height : 15px;
+    width : 15px;
     align-self: center;
 }
 .Filtres_txt{
