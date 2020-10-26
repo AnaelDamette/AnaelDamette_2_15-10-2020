@@ -2,235 +2,257 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="Width=device-width,initial-scale=1,maximum-scale=2,shrink-to-fit=no">
-    <title>Reservia</title>
+    <meta name="viewport" content="Width=device-width,initial-scale=1,maximum-scale=2">
+    <title>Reservia Trouvez l'hébergement pour des vacances de rêve</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b52a7bdb12.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <div>
+    <div id="Index_Reservia">
+        <!-- L'en tête de l'index du site de Reservia-->
         <header id="en tête">
-            <img src="SRC/Logos/Reservia.svg" alt="Le Logo de Reservia"/>
-            <nav>
-                <ul>
-                    <li><a href="#section_hebergements">Hébergements</a></li>
-                    <Li><a href="#section_activités">Activités</a></Li>
-                    <li id=inscription><a href= "incription">S'inscrire</a></li>
-                </ul>
-            </nav>
+            <div class= "Banniere">
+                <img src="SRC/Logos/Reservia.svg" alt="Le Logo de Reservia"/>
+        <!-- Le menu du site-->   
+                <nav> 
+                    <ul>
+                        <li class="Ancres"><a href="#section_hebergements">Hébergements</a></li>
+                        <li class="Ancres"><a href="#section_activités">Activités</a></Li>
+                        <li id="Inscription"><a href= "">S'inscrire</a></li>
+                    </ul>
+                </nav>
+            </div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div id="RechercheVille"> 
+            <!-- Recherche des villes-->
+            <div id="RechercheVille">
                 <form id="form">
-                    <div id="GPSmarker">
-                        <div id="ImgGPSmarker">
-                        <img src ="SRC/SVG/map-marker-alt-solid.svg"/>
-                        </div>
-                    </div>
+                    <figure id="GPSmarker">
+                        <i class="fas fa-map-marker-alt" alt="Indicateur de position"></i>
+                    </figure>
                     <input type="text" placeholder="Marseille, France" id="placeholdertext">
-                    <button type="submit" id=buttonrechercher>Rechercher </button>
+                    <button type="submit" id=bouton_rechercher>Rechercher </button>
                 </form>
-                <div id="Filtres">
-                    <p ><b><a href="&">Filtres</a></b></p>
-                    <div class="Logo_Filtres">
-                        <img src="SRC/SVG/money-bill-wave-solid.svg" alt= "Logo Economie" id="Logo_eco"/>
-                    </div>
-                    <p class="Filtres_txt"><b>Economique</b></p>                    
-                    <div class="Logo_Filtres">                        
-                        <img src="SRC/SVG/child-solid.svg" alt= "Logo Familial" id="Logo_fam"/>                      
-                    </div>
-                    <p class="Filtres_txt"><b>Familial</b></p>
-                    <div class="Logo_Filtres">                       
-                        <img src="SRC/SVG/heart-solid.svg" alt= "Logo Romantique" id="Logo_rom"/>                         
-                    </div> 
-                    <p class="Filtres_txt"><b>Romantique</b></p>
-                    <div class="Logo_Filtres">                    
-                        <img src="SRC/SVG/dog-solid.svg" alt= "Logo Animaux" id="Logo_ani" />                          
-                    </div>
-                    <p class="Filtres_txt"><b>Animaux Autorisés</b></p>
+                <!-- Les Filtres des hégergements-->
+                <div id="Filtres"> 
+                    <button type="submit" id=Bouton_Filtres>Filtres </button>
+                    <div class="Filtre_container">
+                        <figure class="Logo_Filtres">
+                            <i class="fas fa-money-bill-wave"alt= "Logo Economie"></i>
+                        </figure>
+                        <p class="Filtres_txt"><b>Economique</b></p>    
+                    </div>                
+                    <div class="Filtre_container">
+                        <figure class="Logo_Filtres">
+                            <i class="fas fa-child"alt= "Logo Familial"></i>
+                        </figure>
+                        <p class="Filtres_txt"><b>Familial</b></p>    
+                    </div>  
+                    <div class="Filtre_container">
+                        <figure class="Logo_Filtres">
+                            <i class="fas fa-heart"alt= "Logo Romantique"></i>
+                        </figure>
+                        <p class="Filtres_txt"><b>Romantique</b></p>    
+                    </div>  
+                    <div class="Filtre_container">
+                        <figure class="Logo_Filtres">
+                            <i class="fas fa-dog"alt= "Logo Animaux"></i>
+                        </figure>
+                        <p class="Filtres_txt"><b>Animaux Autorisés</b></p>    
+                    </div>     
                 </div>
             </div>
-            <div id="Information">
-                <img src="SRC/SVG/info-circle-solid.svg" alt= "Logo Information" id="Logo_Inf"/>
-                <p>  Plus de 500 logements sont disponibles dans cette ville</p>
+            <!-- Information -->
+            <div id="Information_Container">
+                <figure id="Information">
+                    <i class="fas fa-info" alt="Logo Information"></i>
+                </figure>
+                <p id="Information_Txt">  Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
+        <!-- Section sur les Hébergement-->
         <section id = "section_hebergements">
+            <!-- Hébergement Ville selectionné-->
             <article id = "Marseille_container" class="Hotels_container">
                 <h2>Hébergements à Marseille</h2>
                 <div class = "Hotel_Cards_Wrap_Container">
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Auberge la Cannebière.jpg" alt="image Auberge la Cannebière">
+                            <img src="src/jpeg/Hébergements/Auberge_la_Cannebiere.jpg" alt="image Auberge la Cannebière">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Auberge de la Cannebière</b></p>
-                            <p>Nuit à partir de 25€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 25<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Hôtel du port.jpg" alt="image Hôtel du port">
+                            <img src="src/jpeg/Hébergements/Hotel_du_port.jpg" alt="image Hôtel du port">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Hôtel du port</b></p>
-                            <p>Nuit à partir de 52€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 52<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Hôtel Les mouettes.jpg" alt="image Hôtel Les mouettes">
+                            <img src="src/jpeg/Hébergements/Hotel_Les_mouettes.jpg" alt="image Hôtel Les mouettes">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Hôtel Les mouettes</b></p>
-                            <p>Nuit à partir de 76€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 76<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Hôtel de la mer.jpg" alt="image Hôtel de la mer">
+                            <img src="src/jpeg/Hébergements/Hotel_de_la_mer.jpg" alt="image Hôtel de la mer">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Hôtel de la mer</b></p>
-                            <p>Nuit à partir de 46€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 46<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Auberge Le Panier.jpg" alt="image Auberge le Panier">
+                            <img src="src/jpeg/Hébergements/Auberge_Le_Panier.jpg" alt="image Auberge le Panier">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Auberge Le Panier</b></p>
-                            <p>Nuit à partir de 23€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 23<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container">
                         <div class="Hotel_Card_img_container">
-                            <img src="src/jpeg/Hébergements/Hôtel chez Amina.jpg" alt="image Hôtel chez Anima">
+                            <img src="src/jpeg/Hébergements/Hotel_chez_Amina.jpg" alt="image Hôtel chez Anima">
                         </div>
                         <div class="Hotel_Card_txt">
                             <p><b>Hôtel Chez Anima</b></p>
-                            <p>Nuit à partir de 96€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 96<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
-
                 </div>
+                <p><strong>Afficher plus</strong></p>
             </article>
+            <!-- Hébergement populaire ville selectionné-->
             <aside id="populaire_container" class="Hotels_container">
                 <div id="populaire_titre">
                     <h2>Les plus populaire</h2>
-                    <img src= "SRC/SVG/chart-line-solid.svg" alt= "Logo Popularité"/>
+                    <figure>
+                        <i class="fas fa-chart-line"></i>
+                    </figure>
                 </div>
                 <div class = "Hotel_Card_Wrap_Container_populaire">
                     <div class="Hotel_Card_container_populaire">
                         <div class="Hotel_Card_img_container_populaire">
-                            <img src="src/jpeg/Hébergements/Hôtel le soleil du matin.jpg" alt="image Hôtel le soleil du matin">
+                            <img src="src/jpeg/Hébergements/Hotel_le_soleil_du_matin.jpg" alt="image Hôtel le soleil du matin">
                         </div>
                         <div class="Hotel_Card_txt_populaire">
                             <p><b>Hôtel Le soleil du matin</b></p>
-                            <p>Nuit à partir de 128€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 128<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                            </figure>>
                         </div>
                     </div>
                     <div class="Hotel_Card_container_populaire">
                         <div class="Hotel_Card_img_container_populaire">
-                            <img src="src/jpeg/Hébergements/Au coeur de l'eau Chambre d'hôtes.jpg" alt="image Au coeur de l'eau Chambre d'hôtes">
+                            <img src="src/jpeg/Hébergements/Au_coeur_de_l_eau_Chambre_d_hotes.jpg" alt="image Au coeur de l'eau Chambre d'hôtes">
                         </div>
                         <div class="Hotel_Card_txt_populaire">
                             <p><b>Au coeur de l'eau Chambre d'hôtes</b></p>
-                            <p>Nuit à partir de 71€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p>Nuit à partir de 71<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
                     <div class="Hotel_Card_container_populaire">
                         <div class="Hotel_Card_img_container_populaire">
-                            <img src="src/jpeg/Hébergements/Hôtel tout bleu et Blanc.jpg" alt="image Hôtel tout bleu et Blanc" href="&">
+                            <img src="src/jpeg/Hébergements/Hotel_tout_bleu_et_Blanc.jpg" alt="image Hôtel tout bleu et Blanc" href="&">
                         </div>
                         <div class="Hotel_Card_txt_populaire">
                             <p href="&"><b>Hôtel Tout bleu et blanc</b></p>
-                            <p href="&">Nuit à partir de 68€</p>
-                            <div class="Notation_Container">
-                                <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
-                                <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
-                            </div>
+                            <p href="&">Nuit à partir de 68<strong>€</strong></p>
+                            <figure class="Notation_Container">
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star" alt="étoile de notation"></i>
+                                <i class="fas fa-star star-empty" alt="étoile de notation"></i>
+                            </figure>
                         </div>
                     </div>
             </aside>
         </section>
+        <!-- Activité ville selectionné-->
         <section id = "section_activités">
             <h2 id="Activité_titre">Activités à Marseille</h2>
             <div id="listes_activités">
                     <div class="Activités_à_Marseille_Grande" href="&">
-                        <img src="SRC/jpeg/activité/Vieux Port.jpg" alt="Activité vieux port">
+                        <img src="SRC/jpeg/activité/Vieux_Port.jpg" alt="Activite_vieux_port">
                         <p class="Activités_txt"><b>Vieux Port</b></p>
                     </div>
                     <div class="Activités_à_Marseille_Moyenne" href="&">
-                        <img src="SRC/jpeg/activité/Fort de Pomègues.jpg" alt= "Activité Fort de Pomègues">
+                        <img src="SRC/jpeg/activité/Fort_de_Pomegues.jpg" alt= "Activité Fort de Pomègues">
                         <p class="Activités_txt"><b>Fort de Pomègues</b></p>
                     </div>
                     <div class="Activités_à_Marseille_Petite" href="&">
-                        <img src="SRC/jpeg/activité/Îles du Frioul.jpg">
+                        <img src="SRC/jpeg/activité/Iles_du_Frioul.jpg">
                         <p class="Activités_txt"><b>Îles du Frioul</b></p>
                     </div>
                     <div class="Activités_à_Marseille_Grande" href="&">
-                        <img src="SRC/jpeg/activité/Parc National des Calanques.jpg" alt= "Activité Parc National des Calanques">
+                        <img src="SRC/jpeg/activité/Parc_National_des_Calanques.jpg" alt= "Activité Parc National des Calanques">
                         <p class="Activités_txt"><b>Parc National des Calanques</b></p>
                     </div>
                     <div class="Activités_à_Marseille_Petite" href="&">
@@ -238,12 +260,13 @@
                         <p class="Activités_Txt"><b>Notre-Dame-de-la-Garde</b></p>
                     </div>
                     <div class="Activités_à_Marseille_Moyenne" href="&">
-                        <img src="SRC/jpeg/activité/Parc Longchamp.jpg" alt="Activité Parc Longchamp">
+                        <img src="SRC/jpeg/activité/Parc_Longchamp.jpg" alt="Activité Parc Longchamp">
                         <p class="Activités_txt"><b>Parc Longchamp</b></p>
                     </div>
             </div>    
         </section>
         <footer>
+            <!-- Pied de page-->
             <div id= "footer">
                 <h3>A propos</h3>
                     <ul>
