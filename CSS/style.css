@@ -6,11 +6,14 @@
         width:100% ;
     }
 }
-@media screen and (min-width 720px) and (max-width: 1172px){
-    .section_hebergements {
+@media screen and (min-width :720px) and  (max-width: 1172px){
+    #section_hebergements {
         display: flex;
+        background-color : yellow;
         justify-content: stretch;
-
+    }
+    body {
+        background-color: red;
     }
 }
 #Index_Reservia{
