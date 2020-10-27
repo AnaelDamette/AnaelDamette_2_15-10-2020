@@ -1,44 +1,45 @@
-@media screen and (max-width:1340px) {
-    #Marseille_container{
-        width:100% ;
-    }
-    #populaire_container{
-        width:100% ;
-    }
-}
-@media screen and (min-width :720px) and  (max-width: 1172px){
+@media screen and (max-width: 720px) @media screen and (min-width: 720px) and (max-width: 1172px) {
     #section_hebergements {
         display: flex;
-        background-color : yellow;
+        background-color: yellow;
         justify-content: stretch;
     }
     body {
         background-color: red;
     }
 }
-#Index_Reservia{
+@media screen and (max-width: 1340px) {
+    #Marseille_container {
+        width: 100%;
+    }
+    #populaire_container {
+        width: 100%;
+    }
+}
+
+#Index_Reservia {
     max-width: 1340px;
-    margin:auto;
+    margin: auto;
 }
 
 /* Les propriétés commune à tous le site */
 
-body{
-    font-family:'Raleway','calibri',sans-serif;
+body {
+    font-family: "Raleway", "calibri", sans-serif;
 }
-h2{
-    font-weight:bolder;
+h2 {
+    font-weight: bolder;
 }
-p{
-    margin-bottom : 5px;
+p {
+    margin-bottom: 5px;
     margin-top: 5px;
 }
 ul {
     list-style: none;
 }
-a  {
-    text-decoration : none;
-    color : black;
+a {
+    text-decoration: none;
+    color: black;
 }
 figure {
     font-size: 15px;
@@ -46,82 +47,79 @@ figure {
 
 /* Propriété de la Bannière */
 
-#Inscription {
-    color : #0065fc;
+#Inscription a {
+    color: #0065fc;
 }
-nav{
-    display : flex;
+nav {
+    display: flex;
     justify-self: self-end;
 }
 nav ul {
     display: flex;
 }
-nav li{
+nav li {
     margin-right: 15px;
 }
 .Ancres a:hover {
-    transform: translate(1px,1px);
-    border-top : solid 2px #0065FC;
+    transform: translate(1px, 1px);
+    border-top: solid 2px #0065fc;
     padding-top: 25px;
     color: #0065fc;
 }
 .Banniere {
-    display : Flex;
+    display: Flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin : auto;
+    margin: auto;
     height: 100px;
 }
 
 /* propriété du header */
 
-#form{
+#form {
     display: flex;
     height: 75px;
-    width:400px;
+    width: 400px;
     align-items: center;
     align-content: flex-start;
     margin: 0px;
     padding: 0px;
 }
-#GPSmarker{
+#GPSmarker {
     display: flex;
     height: 43px;
     width: 40px;
-    background-color: #F2f2f2;
-    box-shadow:2px 2px 10px #f2f2f2;
-    border : solid 1px #f2f2f2;
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border: solid 1px #f2f2f2;
     border-bottom-left-radius: 1em;
-    border-top-left-radius: 1em; 
+    border-top-left-radius: 1em;
     align-items: center;
     justify-content: center;
     margin: 0px;
     padding: 0px;
-
 }
 #placeholdertext {
     display: flex;
     border: none;
     height: 40px;
     width: 200px;
-    box-shadow:2px 2px 10px #f2f2f2;
-    border: solid 1px #F2f2f2;
-
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border: solid 1px #f2f2f2;
 }
-#bouton_rechercher{
+#bouton_rechercher {
     display: flex;
     height: 43px;
     width: 150px;
-    box-shadow:2px 2px 10px #f2f2f2;
+    box-shadow: 2px 2px 10px #f2f2f2;
     color: white;
     align-items: center;
     justify-content: center;
-    background-color: #0065FC;
-    border : solid 1px #0065fc;
+    background-color: #0065fc;
+    border: solid 1px #0065fc;
     border-bottom-right-radius: 1em;
     border-top-right-radius: 1em;
-
 }
 #Bouton_Filtres {
     display: flex;
@@ -131,8 +129,8 @@ nav li{
     background-color: white;
 }
 #Filtres {
-    display : flex;
-    height : 50px;
+    display: flex;
+    height: 50px;
     align-items: center;
     justify-content: start;
     width: 1440px;
@@ -142,31 +140,31 @@ nav li{
     align-items: center;
     justify-content: flex-start;
     height: 35px;
-    border : solid 3px #f2f2f2;
+    border: solid 3px #f2f2f2;
     border-left-style: none;
     border-radius: 1.5em;
     margin: 20px;
     overflow: visible;
 }
 .Logo_Filtres {
-    display : flex;
+    display: flex;
     height: 35px;
     width: 35px;
     border: solid 3px #deebff;
-    border-radius : 1.5em;
+    border-radius: 1.5em;
     align-items: center;
-    background-color :  #deebff;
+    background-color: #deebff;
     justify-content: center;
-    color : #0065fc;
+    color: #0065fc;
     margin: 0px;
 }
-.Filtres_txt{
+.Filtres_txt {
     display: flex;
     align-items: center;
     height: 30px;
-    padding-left: 1em ;
+    padding-left: 1em;
     padding-right: 1em;
-    box-shadow:2px 2px 10px #f2f2f2;
+    box-shadow: 2px 2px 10px #f2f2f2;
 }
 #Information_Container {
     display: flex;
@@ -174,12 +172,12 @@ nav li{
     align-items: center;
     justify-content: flex-start;
     height: 20px;
-    margin : 20px;
+    margin: 20px;
 }
 #Information {
     display: flex;
     color: #0065fc;
-    border : solid 3px #f2f2f2;
+    border: solid 3px #f2f2f2;
     border-radius: 1.5em;
     height: 20px;
     width: 20px;
@@ -194,165 +192,165 @@ nav li{
 
 /* Propriété section Hébergements */
 
-#section_hebergements{
-    display:flex;
-    justify-content:space-between;
+#section_hebergements {
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap-reverse;
 }
-.Hotels_container{
-    background-color:#f2F2F2;
-    border-radius:1em;
-    padding:2em;
+.Hotels_container {
+    background-color: #f2f2f2;
+    border-radius: 1em;
+    padding: 2em;
 }
-#Marseille_container{
-    width:60%;
-    min-width : 450px;
+#Marseille_container {
+    width: 60%;
+    min-width: 450px;
 }
-#populaire_container{
-    width:20%;
-    min-width:350px;
+#populaire_container {
+    width: 20%;
+    min-width: 350px;
 }
 .Hotel_Card_container {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    background-color:#fff;
-    border:solid 7px #fff;
-    border-radius:1em;
-    max-width : 200px;
-    margin:20px;
-    box-shadow:2px 2px 10px rgb(226, 226, 226);
-    overflow :hidden;
+    align-items: flex-start;
+    background-color: #fff;
+    border: solid 7px #fff;
+    border-radius: 1em;
+    max-width: 200px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgb(226, 226, 226);
+    overflow: hidden;
 }
-.Hotel_Card_container_populaire{
-    display:flex;
-    height:7em;
-    align-items:center;
-    background-color:#fff;
-    border:solid 7px #fff;
-    border-radius:1em;
-    margin:20px;
-    min-width:300px;
-    box-shadow:2px 2px 10px rgb(226, 226, 226);
-    overflow :hidden;
+.Hotel_Card_container_populaire {
+    display: flex;
+    height: 7em;
+    align-items: center;
+    background-color: #fff;
+    border: solid 7px #fff;
+    border-radius: 1em;
+    margin: 20px;
+    min-width: 300px;
+    box-shadow: 2px 2px 10px rgb(226, 226, 226);
+    overflow: hidden;
 }
-.Hotel_Card_txt{
-    display:flex;
+.Hotel_Card_txt {
+    display: flex;
     flex-direction: column;
-    padding:2px;
+    padding: 2px;
 }
-.Hotel_Card_txt_populaire{
-    display:flex;
+.Hotel_Card_txt_populaire {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 1px;
 }
-#populaire_titre{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+#populaire_titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-#populaire_titre img{
+#populaire_titre img {
     height: 30px;
 }
-.Hotel_Cards_Wrap_Container{
-    display:flex;
+.Hotel_Cards_Wrap_Container {
+    display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
 }
 
 /* Au passage de la souris */
 
-.Hotel_Card_container:hover{
-    transform: translate(1px,1px)
+.Hotel_Card_container:hover {
+    transform: translate(1px, 1px);
 }
-.Hotel_Card_container_populaire:hover{
-    transform: translate(1px,1px)
+.Hotel_Card_container_populaire:hover {
+    transform: translate(1px, 1px);
 }
 
 /* Notation hébergement */
 
-.Notation_Container{
-    display:flex;
-    justify-content:start;
-    align-items:start;
-    height:20px;
-    margin : 10px 0px 0px 0px;
+.Notation_Container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 20px;
+    margin: 10px 0px 0px 0px;
 }
 .fa-star {
-    font-size:15px;
+    font-size: 15px;
     color: #0065fc;
 }
 .star-empty {
-    color: #F2f2f2;
+    color: #f2f2f2;
 }
-.Notation_Container img{
+.Notation_Container img {
     max-height: 15px;
 }
 
-/* Propriét section activités */
+/* Propriété section activités */
 
 #listes_activités {
     display: flex;
-    flex-flow : column wrap;
+    flex-flow: column wrap;
     height: 470px;
     align-items: center;
     flex-wrap: wrap;
 }
 .Activités_txt {
-    margin : 7px;
+    margin: 7px;
 }
 .Activités_à_Marseille_Grande {
     display: flex;
     flex-direction: column;
-    background-color:#fff;
-    border:solid 0px #fff;
+    background-color: #fff;
+    border: solid 0px #fff;
     max-width: 310px;
-    border-radius:1em;
-    margin:20px;
-    justify-content:space-between;
-    box-shadow:2px 2px 10px rgb(226, 226, 226);
+    border-radius: 1em;
+    margin: 20px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
 .Activités_à_Marseille_Moyenne {
     display: flex;
     flex-direction: column;
-    background-color:#fff;
-    border:solid 0px #fff;
+    background-color: #fff;
+    border: solid 0px #fff;
     max-width: 310px;
-    border-radius:1em;
-    margin:20px;
-    justify-content:space-between;
-    box-shadow:2px 2px 10px rgb(226, 226, 226);
+    border-radius: 1em;
+    margin: 20px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
 .Activités_à_Marseille_Petite {
     display: flex;
     flex-direction: column;
-    background-color:#fff;
-    border:solid 0px #fff;
+    background-color: #fff;
+    border: solid 0px #fff;
     max-width: 310px;
-    border-radius:1em;
-    margin:20px;
-    justify-content:space-between;
-    box-shadow:2px 2px 10px rgb(226, 226, 226);
+    border-radius: 1em;
+    margin: 20px;
+    justify-content: space-between;
+    box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
 #Activité_titre {
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin : 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
 }
 #listes_activités :hover {
-    transform: translate(1px,1px)
+    transform: translate(1px, 1px);
 }
 
 /* Propriété Footer */
 
 #footer {
-    display : flex;
-    background-color: #F2f2f2;
+    display: flex;
+    background-color: #f2f2f2;
     flex-direction: column;
     max-height: 150px;
     flex-wrap: wrap;
