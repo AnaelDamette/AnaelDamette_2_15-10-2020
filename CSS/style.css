@@ -1,19 +1,103 @@
-@media screen and (max-width: 720px) @media screen and (min-width: 720px) and (max-width: 1172px) {
-    #section_hebergements {
-        display: flex;
-        background-color: yellow;
-        justify-content: stretch;
+
+ /* Présentation sur Mobile */
+@media screen and (max-width: 720px){
+    .Activités_à_Marseille_Grande {
+        height: 186px;
+        flex-shrink: 2;
     }
-    body {
-        background-color: red;
+    .Activités_à_Marseille_Grande >img {
+        max-height: 80%;
     }
-}
-@media screen and (max-width: 1340px) {
     #Marseille_container {
         width: 100%;
+        background-color: white;
     }
     #populaire_container {
         width: 100%;
+        border-radius: 0em;
+    }
+    .Hotel_Card_container {
+        margin: 5px; 
+        max-width: 311px !important;
+        width: 100%;  
+    }
+    .Hotel_Cards_Wrap_Container {
+        justify-items: stretch;
+    }
+    .Hotel_Card_Wrap_Container_populaire {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Hotel_Card_container_populaire {
+        flex: 1 1 0;
+    }
+}
+
+/* Présentation pour les tablettes */
+
+@media screen and (min-width: 720px) and (max-width : 1172px) {
+    /* Gestion de l'alignement des Filtres */
+    #Filtres {
+        flex-direction :column;
+    }
+    /* Gestion de l'alignement des hébergements */
+    #Marseille_container {
+        width: 100%;
+        background-color: white;
+    }
+    #populaire_container {
+        width: 100%;
+        border-radius: 0em;
+    }
+    .Hotel_Card_container {
+        margin: 5px;
+    }
+    .Hotel_Card_Wrap_Container_populaire {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .Hotel_Card_container_populaire {
+        flex: 1 1 0;
+    }
+    #listes_activités {
+        display: flex;
+        flex-flow: row;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .Activités_à_Marseille_Grande {
+        order: 1;
+    }
+    .Activités_à_Marseille_moyenne {
+        order: 2;
+    }
+    .Activités_à_Marseille_petite {
+        order: 3;
+    }
+}
+
+/* Présentation sur ordinateur */
+@media screen and (min-width: 1172px) {
+    #Marseille_container {
+        width: 60%;
+        min-width: 450px;
+    }
+    #populaire_container {
+        width: 20%;
+        min-width: 350px;
+    }
+    .Hotel_Card_container {
+        margin: 20px;
+    }
+    #listes_activités {
+        display: flex;
+        flex-flow: column wrap;
+        height: 470px;
+        align-items: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -26,6 +110,8 @@
 
 body {
     font-family: "Raleway", "calibri", sans-serif;
+    width: 100%;
+    padding:  15px;
 }
 h2 {
     font-weight: bolder;
@@ -36,6 +122,7 @@ p {
 }
 ul {
     list-style: none;
+    padding : 0;
 }
 a {
     text-decoration: none;
@@ -130,10 +217,13 @@ nav li {
 }
 #Filtres {
     display: flex;
-    height: 50px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: start;
-    width: 1440px;
+    flex-wrap: wrap;
+}
+.Filtre_container_wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 .Filtre_container {
     display: flex;
@@ -202,14 +292,6 @@ nav li {
     border-radius: 1em;
     padding: 2em;
 }
-#Marseille_container {
-    width: 60%;
-    min-width: 450px;
-}
-#populaire_container {
-    width: 20%;
-    min-width: 350px;
-}
 .Hotel_Card_container {
     display: flex;
     flex-direction: column;
@@ -217,8 +299,8 @@ nav li {
     background-color: #fff;
     border: solid 7px #fff;
     border-radius: 1em;
+    height: 230px;
     max-width: 200px;
-    margin: 20px;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
@@ -231,6 +313,7 @@ nav li {
     border-radius: 1em;
     margin: 20px;
     min-width: 300px;
+    max-width: 500px;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
@@ -243,7 +326,7 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1px;
+    padding: 5px;
 }
 #populaire_titre {
     display: flex;
@@ -257,6 +340,7 @@ nav li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 /* Au passage de la souris */
@@ -290,12 +374,8 @@ nav li {
 
 /* Propriété section activités */
 
-#listes_activités {
-    display: flex;
-    flex-flow: column wrap;
-    height: 470px;
-    align-items: center;
-    flex-wrap: wrap;
+#section_activités {
+    padding: 2em;
 }
 .Activités_txt {
     margin: 7px;
@@ -305,9 +385,8 @@ nav li {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
-    max-width: 310px;
     border-radius: 1em;
-    margin: 20px;
+    margin: 10px;
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
@@ -317,9 +396,8 @@ nav li {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
-    max-width: 310px;
     border-radius: 1em;
-    margin: 20px;
+    margin: 10px;
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
@@ -329,9 +407,8 @@ nav li {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
-    max-width: 310px;
     border-radius: 1em;
-    margin: 20px;
+    margin: 10px;
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
@@ -340,7 +417,7 @@ nav li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 15px;
 }
 #listes_activités :hover {
     transform: translate(1px, 1px);
@@ -351,8 +428,13 @@ nav li {
 #footer {
     display: flex;
     background-color: #f2f2f2;
-    flex-direction: column;
-    max-height: 150px;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
+    justify-content: left;
+}
+.footer_titre {
+    display : flex;
+    flex-direction: column;
+    margin: 0px 100px 0px 20px;
 }
