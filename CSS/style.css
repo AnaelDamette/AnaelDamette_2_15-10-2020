@@ -1,6 +1,40 @@
 
  /* Présentation sur Mobile */
 @media screen and (max-width: 720px){
+    /* Organisation de la bannière */
+    .Banniere > img{
+        margin-right: 20px;
+    }
+    .Banniere {
+        flex-wrap : wrap;   
+    }
+    #Inscription_Petite_Resolution {
+        order: 2;
+    }
+    .Banniere > img {
+        order: 1;
+    }
+    .Banniere > nav {
+        order: 3;
+    }
+    #bouton_rechercher {
+        display: none !important;
+    }
+    #icone_bouton_rechercher {
+        display: flex;
+        height: 43px;
+        width: 43px;
+        box-shadow: 2px 2px 10px #f2f2f2;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        background-color: #0065fc;
+        border: solid 1px #0065fc;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+    
+    /* Organisation des activité */
     .Activités_à_Marseille_Grande {
         height: 186px;
         flex-shrink: 2;
@@ -16,21 +50,8 @@
         width: 100%;
         border-radius: 0em;
     }
-    .Hotel_Card_container {
-        margin: 5px; 
-        max-width: 311px !important;
-        width: 100%;  
-    }
-    .Hotel_Cards_Wrap_Container {
-        justify-items: stretch;
-    }
-    .Hotel_Card_Wrap_Container_populaire {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .Hotel_Card_container_populaire {
-        flex: 1 1 0;
+    #Inscription {
+        display: none;
     }
 }
 
@@ -45,13 +66,19 @@
     #Marseille_container {
         width: 100%;
         background-color: white;
+        max-width: 100%;
     }
     #populaire_container {
         width: 100%;
         border-radius: 0em;
+        max-width: 100%
     }
     .Hotel_Card_container {
+        width: 100%;
         margin: 5px;
+    }
+    .Hotel_Card_img_container {
+        min-width: 100%
     }
     .Hotel_Card_Wrap_Container_populaire {
         display: flex;
@@ -61,6 +88,7 @@
     .Hotel_Card_container_populaire {
         flex: 1 1 0;
     }
+    /* Gestion de l'alignement des activités */
     #listes_activités {
         display: flex;
         flex-flow: row;
@@ -76,6 +104,12 @@
     }
     .Activités_à_Marseille_petite {
         order: 3;
+    }
+    #icone_bouton_rechercher {
+        display:none;
+    }
+    #Inscription_Petite_Resolution {
+        display: none;
     }
 }
 
@@ -98,6 +132,12 @@
         height: 470px;
         align-items: center;
         flex-wrap: wrap;
+    }
+    #icone_bouton_rechercher {
+        display:none;
+    }
+    #Inscription_Petite_Resolution {
+        display: none;
     }
 }
 
@@ -134,6 +174,9 @@ figure {
 
 /* Propriété de la Bannière */
 
+#Inscription_Petite_Resolution  {
+    color: #0065fc;
+}
 #Inscription a {
     color: #0065fc;
 }
