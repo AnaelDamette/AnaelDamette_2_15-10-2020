@@ -33,6 +33,15 @@
         border-bottom-right-radius: 1em;
         border-top-right-radius: 1em;
     }
+
+    /* Organisation des Hébergements */
+
+    .Hotel_Card_container_populaire {
+        min-width: 200px !important;
+    }
+    .Hotel_Card_container {
+        margin: 10px;
+    }
     
     /* Organisation des activité */
     .Activités_à_Marseille_Grande {
