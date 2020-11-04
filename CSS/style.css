@@ -35,7 +35,7 @@ figure {
 figcaption  {
     margin: 7px 7px 0px 0px;
 }
-nav, nav ul, .Banniere,.Hotel_Card_img_container, figcaption, #form, #GPSmarker, #placeholdertext, #bouton_rechercher,#icone_bouton_rechercher, #Bouton_Filtres, #Filtres, .Filtre_container_wrap, .Filtre_container, .Logo_Filtres, .Filtres_txt, #Information_Container, #Information,#section_hebergements,#populaire_container, .Hotel_Card_container, .Hotel_Card_container_populaire, .Hotel_Card_txt, .Hotel_Card_txt_populaire, #populaire_titre, .Hotel_Cards_Wrap_Container, .Hotel_Card_Wrap_Container_populaire, .Notation_Container, .Activités_à_Marseille_Grande, .activite_marseille_pc, .Activités_à_Marseille_Moyenne, .Activités_à_Marseille_Petite, #Activité_titre, #listes_activités, .activite_tablette, #listes_activite_portable, footer, .footer_titre   {
+nav, nav ul, .Banniere,.Hotel_Card_img_container, figcaption, #form, #GPSmarker, #placeholdertext, #bouton_rechercher,#icone_bouton_rechercher, #Bouton_Filtres, #Filtres, .Filtre_container_wrap, .Filtre_container, .Logo_Filtres, .Filtres_txt, #Information_Container, #Information,#section_hebergements,#populaire_container, .Hotel_Card_container, .Hotel_Card_container_populaire, .Hotel_Card_txt, .Hotel_Card_txt_populaire, #populaire_titre, .Hotel_Cards_Wrap_Container, .Hotel_Card_Wrap_Container_populaire, .Notation_Container, .Activites_a_Marseille_Grande, .activite_marseille_pc, .Activites_a_Marseille_Moyenne, .Activites_a_Marseille_Petite, #Activite_titre, #listes_activites, .activite_tablette, #listes_activite_portable, footer, .footer_titre   {
     display : flex;
 }
 
@@ -275,13 +275,13 @@ nav li {
 
 /* Propriété section activités */
 
-#section_activités {
+#section_activites {
     padding: 20px;
 }
-.Activités_txt {
-    margin: 7px;
+.Activites_txt {
+    margin-left: 8px;
 }
-.Activités_à_Marseille_Grande {
+.Activites_a_Marseille_Grande {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -291,7 +291,7 @@ nav li {
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
-.Activités_à_Marseille_Moyenne {
+.Activites_a_Marseille_Moyenne {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -301,7 +301,7 @@ nav li {
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
-.Activités_à_Marseille_Petite {
+.Activites_a_Marseille_Petite {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -311,12 +311,12 @@ nav li {
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
-#Activité_titre {
+#Activite_titre {
     justify-content: space-between;
     align-items: center;
     margin: 15px 0px 15px 0px;
 }
-#listes_activités :hover {
+#listes_activites :hover {
     transform: translate(1px, 1px);
 }
 
@@ -398,10 +398,10 @@ footer {
         width: 100%;
     }
     /* Organisation des activité */
-    .Activités_à_Marseille_Grande, .Activités_à_Marseille_Petite, .Activités_à_Marseille_Moyenne {
+    .Activites_a_Marseille_Grande, .Activites_a_Marseille_Petite, .Activites_a_Marseille_Moyenne {
         margin: 20px 0px 20px 0px !important;
     }
-    .Activités_à_Marseille_Grande >img {
+    .Activites_a_Marseille_Grande >img {
         max-height: 80%;
     }
     #Marseille_container {
@@ -459,7 +459,7 @@ footer {
     }
    
     /* Gestion de l'alignement des activités */
-    #listes_activités {
+    #listes_activites {
         flex-flow: row;
         width: 100%;
         flex-wrap: wrap;
@@ -468,7 +468,7 @@ footer {
     #icone_bouton_rechercher {
         display:none;
     }
-    .Activités_à_Marseille_Grande >img, .Activités_à_Marseille_Moyenne > img, .Activités_à_Marseille_Petite > img {
+    .Activites_a_Marseille_Grande >img, .Activites_a_Marseille_Moyenne > img, .Activites_a_Marseille_Petite > img {
         max-height: 80%;
         min-height: 80%;
     }
@@ -506,7 +506,7 @@ footer {
     .Hotel_Card_container {
         margin: 20px 20px 20px 0px;
     }
-    #listes_activités {
+    #listes_activites {
         flex-flow: column wrap;
         height: 470px;
         align-items: center;
