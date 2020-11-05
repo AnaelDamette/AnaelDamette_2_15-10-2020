@@ -179,6 +179,10 @@ nav li {
 
 /* Propriété section Hébergements */
 
+#titre_display_none {
+    display : none;
+}
+
 #section_hebergements {
     justify-content: space-between;
     flex-wrap: wrap-reverse;
