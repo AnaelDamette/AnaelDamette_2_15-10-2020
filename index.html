@@ -1,55 +1,99 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Reservia</title>
-    </head>
-    <body>
-        <header>
-            <div id="en tête">
-                <img src="CSS/Reservia.svg" alt="Le Logo de Reservia"/>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-                <div id="RechercheVille"> 
-                    <form>
-                        <img src ="CSS/map-marker-alt-solid.svg"/>
-                        <input type="text" placeholder="Marseille, France">
-                        <button type="submit">Rechercher</button>
-                    </form>
-                    <div id="Filtres">
-                        <p>Filtres</p>
-                        <p><img src="CSS/money-bill-wave-solid.svg" alt= "Logo Economie"/>Economique</p>
-                        <p><img src="CSS/child-solid.svg" alt= "Logo Familial"/>Familial</p>
-                        <p><img src="CSS/heart-solid.svg" alt= "Logo Romantique"/>Romantique</p>   
-                        <p><img src="CSS/dog-solid.svg" alt= "Logo Animaux"/>Animaux autorisés</p>
+<head>
+<meta charset="UTF-8">
+<title>Reservia</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div id="en tête">
+            <img src="LogoReservia.png" alt="Le Logo de Reservia"/>
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div id="RechercheVille"> 
+                <form>
+                    <img src ="FrontGps"/>
+                    <input type="text" placeholder="Marseille, France">
+                    <button type="submit">Rechercher</button>
+                </form>
+                <div id="Filtres">
+                    <p>Filtres</p>
+                    <p><img src="LogoEco" alt= "Logo Economie"/>Economique</p>
+                    <p><img src="LogoFam" alt= "Logo Familial"/>Familial</p>
+                    <p><img src="LogoRom" alt= "Logo Romantique"/>Romantique</p>   
+                    <p><img src="LogoAni" alt= "Logo Animaux"/>Animaux autorisés</p>
+                </div>
+            </div>
+            <p><img src="LogoInf" alt= "Logo Information"/> Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+        <nav>
+            <ul>
+            <li>Hébergements</li>
+            <Li>Activités</Li>
+            <li>S'inscrire</li>
+            </ul>
+        </nav>
+    </header>
+    <section id = "section_hebergements">
+        <article id = "Marseille_container" class="Hotels_container">
+            <h2>Hébergements à Marseille</h2>
+            <div>
+
+            </div>
+        </article>
+        <aside id="populaire_container" class="Hotels_container">
+            <div id="populaire_titre">
+                <h2>Les plus populaire</h2>
+                <img src= "src/Logos/chart-line-solid.svg" alt= "Logo Popularité"/>
+            </div>
+            <div class = "Hotel_Cards_Wrap_Container">
+                <div class="Hotel-Card-container">
+                    <div class="Hotel-Card-img-container">
+                        <img src="src/jpeg/hotelPop1.jpg" alt="image hotel populaire 1">
+                    </div>
+                    <div class="Hotel-Card-txt">
+                        <p><b>Hôtel Le soleil du matin</b></p>
+                        <p>Nuit à partir de 178€</p>
+                        <div class="Notation_Container">
+                            <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                        </div>
                     </div>
                 </div>
-                <p><img src="LogoInf" alt= "Logo Information"/> Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="Hotel-Card-container">
+                    <div class="Hotel-Card-img-container">
+                        <img src="src/jpeg/hotelPop1.jpg" alt="image hotel populaire 1">
+                    </div>
+                    <div class="Hotel-Card-txt">
+                        <p><b>Hôtel Le soleil du matin</b></p>
+                        <p>Nuit à partir de 178€</p>
+                        <div class="Notation_Container">
+                            <img id="etoile_pleine" src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-solid.svg" alt="étoile de notation">
+                            <img  src="SRC/SVG/star-empty.svg" alt="étoile de notation">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <ul>
-                <li>Hébergements</li>
-                <Li>Activités</Li>
-                <li>S'inscrire</li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <h2>Hébergements à Marseille</h2>
-                <div><p><strong>Auberge de la cannebière</strong>Nuit à partir de <em>25€</em></p></div>
-            <aside>
-                <h2>Les plus populaire <img src= "LogoPop" alt= "Logo Popularité"/></h2>
-            </aside>
-        </section>
-        <section>
-            <h2>Activités à Marseille</h2>
-        </section>
-        <footer>
-            <div id= "footer">
-                <h3>A propos</h3>
-                <h3>Nos hébergements</h3>
-                <h3>Assistance</h3>
-            </div>
-        </footer>
-    </body>
+
+        </aside>
+    </section>
+    <section>
+        <h2>Activités à Marseille</h2>
+    </section>
+    <footer>
+        <div id= "footer">
+            <h3>A propos</h3>
+            <h3>Nos hébergements</h3>
+            <h3>Assistance</h3>
+        </div>
+    </footer>
+</body>
 </html>
