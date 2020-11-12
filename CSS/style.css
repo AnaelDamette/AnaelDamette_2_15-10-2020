@@ -35,7 +35,7 @@ figure {
 figcaption  {
     margin: 7px 7px 0px 0px;
 }
-nav, nav ul, .Banniere,.Hotel_Card_img_container, figcaption, #form, #GPSmarker, #placeholdertext, #bouton_rechercher,#icone_bouton_rechercher, #Bouton_Filtres, #Filtres, .Filtre_container_wrap, .Filtre_container, .Logo_Filtres, .Filtres_txt, #Information_Container, #Information,#section_hebergements,#populaire_container, .Hotel_Card_container, .Hotel_Card_container_populaire, .Hotel_Card_txt, .Hotel_Card_txt_populaire, #populaire_titre, .Hotel_Cards_Wrap_Container, .Hotel_Card_Wrap_Container_populaire, .Notation_Container, .Activites_a_Marseille_Grande, .activite_marseille_pc, .Activites_a_Marseille_Moyenne, .Activites_a_Marseille_Petite, #Activite_titre, #listes_activites, .activite_tablette, #listes_activite_portable, footer, .footer_titre   {
+nav, nav ul,#Inscription, #banniere_1, #banniere_2,.Banniere,.Hotel_Card_img_container, figcaption, #form, #GPSmarker, #placeholdertext, #bouton_rechercher,#icone_bouton_rechercher, #Bouton_Filtres, #Filtres, .Filtre_container_wrap, .Filtre_container, .Logo_Filtres, .Filtres_txt, #Information_Container, #Information,#section_hebergements,#populaire_container, .Hotel_Card_container, .Hotel_Card_container_populaire, .Hotel_Card_txt, .Hotel_Card_txt_populaire, #populaire_titre, .Hotel_Cards_Wrap_Container, .Hotel_Card_Wrap_Container_populaire, .Notation_Container, .Activites_a_Marseille_Grande, .activite_marseille_pc, .Activites_a_Marseille_Moyenne, .Activites_a_Marseille_Petite, #Activite_titre, #listes_activites, .activite_tablette, #listes_activite_portable, footer, .footer_titre   {
     display : flex;
 }
 
@@ -44,30 +44,36 @@ nav, nav ul, .Banniere,.Hotel_Card_img_container, figcaption, #form, #GPSmarker,
 #en_tete {
     padding : 20px;
 }
-#Inscription_Petite_Resolution  {
+#Inscription {
     color: #0065fc;
+    margin-left: 20px;
 }
-#Inscription a {
-    color: #0065fc;
+#banniere_1 {
+    justify-content : space-between;
+    flex: auto;
+    align-items: flex-end;
+    margin-right: 20px;
 }
-nav {
-    justify-self: self-end;
+#banniere_2 {
+    justify-content: space-between;
+    align-items: flex-end;
 }
-nav li {
-    margin-right: 15px;
-}
-.Ancres a:hover {
+
+.Ancres:hover {
     transform: translate(1px, 1px);
     border-top: solid 2px #0065fc;
-    padding-top: 50px;
     color: #0065fc;
+    padding-top: 50px;
 }
 .Banniere {
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: stretch;
+    margin: 0px 0px 20px 0px;
     height: 100px;
+    flex-wrap: wrap;
+}
+.Ancres, #Inscription {
+    height: 45px;
 }
 
 /* propriété du header */
@@ -209,7 +215,6 @@ nav li {
     border: solid 7px #fff;
     border-radius: 1em;
     margin: 20px 20px 20px 0px;
-    min-width: 300px;
     max-width: 500px;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
@@ -347,23 +352,30 @@ footer {
  /* Présentation sur Mobile */
  @media screen and (max-width: 720px){
     /* Organisation de la bannière */
-    .Banniere > img{
-        margin-right: 20px;
+    #banniere_1 {
+        flex-direction: column;
+        flex: none;
+        align-items: initial;
     }
-    .Banniere {
-        flex-wrap : wrap;  
+     #banniere_2 {
+         flex-direction: column-reverse;
+         flex: auto;
+         align-items: initial;
+     }
+     .Ancres:hover {
+        border-bottom: solid 2px #0065fc;
+        border-top: none !important;
+        padding-top: 0px;
+        padding-bottom: 10px;
     }
-    #Inscription_Petite_Resolution {
-        order: 2;
+    .Ancres {
+        padding: 10px 20px 10px 20px;
+        border-bottom: solid 2px #f2f2f2;
     }
-    .Banniere > img {
-        order: 1;
+    #Inscription {
+        align-items: center ;
     }
-    .Banniere > nav {
-        order: 3;
-    }
-    nav, nav > ul {
-        justify-content: space-around;
+    #form {
         width : 100%;
     }
     #bouton_rechercher {
@@ -381,16 +393,6 @@ footer {
         border-bottom-right-radius: 1em;
         border-top-right-radius: 1em;
     }
-    .Ancres a:hover {
-        border-bottom: solid 2px #0065fc;
-        border-top: none !important;
-        padding-bottom: 10px;
-    }
-    nav > ul {
-        border-bottom: solid 2px #f2f2f2;
-        padding-bottom: 10px;
-    }
-
     /* Organisation des Hébergements */
 
     .Hotel_Card_container_populaire {
@@ -428,9 +430,6 @@ footer {
     #populaire_container {
         width: 100%;
         border-radius: 0em;
-    }
-    #Inscription {
-        display: none;
     }
     #listes_activite_ordinateur, #listes_activite_tablette {
         display : none;
