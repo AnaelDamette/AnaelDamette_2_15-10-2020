@@ -9,6 +9,8 @@ body {
     font-family: "Raleway", "calibri", sans-serif;
     color: #696969;
     width: 100%;
+    margin: 0px;
+    padding: 8px;
 }
 h1, h2, h3 {
     color: black
@@ -352,6 +354,10 @@ footer {
  /* Présentation sur Mobile */
  @media screen and (max-width: 720px){
     /* Organisation de la bannière */
+    .Banniere {
+        border-bottom: solid 2px #f2f2f2;
+        padding-bottom: 10px;
+    }
     #banniere_1 {
         flex-direction: column;
         flex: none;
@@ -395,13 +401,17 @@ footer {
     }
     /* Organisation des Hébergements */
 
+    main {
+        padding: 0px;
+    }
+
     .Hotel_Card_container_populaire {
         max-height: 175px;
     }
     .Hotel_Card_container {
         max-height: 200px;
         max-width : 100% !important;
-        min-width: 100%;
+        min-width: 95%;
         margin: 10px 0px 10px 0px;
     }
     .Hotel_Cards_Wrap_Container {
@@ -414,6 +424,12 @@ footer {
     }
     .Hotel_Card_img_container > img {
         width: 100%;
+    }
+    .Hotels_container {
+        padding: 0px;
+    }
+    #populaire_container {
+        padding: 20px;
     }
     /* Organisation des activité */
     .Activites_a_Marseille_Grande, .Activites_a_Marseille_Petite, .Activites_a_Marseille_Moyenne {
@@ -506,7 +522,7 @@ footer {
         justify-content: space-between;
         width: 60%;
         min-width: 450px;
-        padding : 2em;
+        padding : 20px;
     }
     .Activites_a_Marseille_Petite {
         height: 170px;
@@ -529,7 +545,7 @@ footer {
         min-width: 350px;
     }
     .Hotel_Card_container {
-        margin: 20px 20px 20px 0px;
+        margin: 10px 10px 10px 0px;
     }
     #listes_activite {
         flex-flow: column wrap;
