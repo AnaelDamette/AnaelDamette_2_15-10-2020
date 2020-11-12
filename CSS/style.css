@@ -41,8 +41,8 @@ nav, nav ul,#Inscription, #banniere_1, #banniere_2,.Banniere,.Hotel_Card_img_con
 
 /* Propriété de la Bannière */
 
-#en_tete {
-    padding : 20px;
+#en_tete, main {
+    padding : 20px
 }
 #Inscription {
     color: #0065fc;
@@ -285,7 +285,7 @@ nav, nav ul,#Inscription, #banniere_1, #banniere_2,.Banniere,.Hotel_Card_img_con
 /* Propriété section activités */
 
 #section_activites {
-    padding: 20px 20px 0px 20px;
+    padding: 20px 0px 0px 0px;
 }
 .Activites_txt {
     margin: 15px;
@@ -325,8 +325,8 @@ nav, nav ul,#Inscription, #banniere_1, #banniere_2,.Banniere,.Hotel_Card_img_con
     align-items: center;
     margin: 15px 0px 15px 0px;
 }
-#listes_activites :hover {
-    transform: translate(1px, 1px);
+.activite_marseille_pc {
+    flex-direction: column;
 }
 
 /* Propriété Footer */
@@ -431,10 +431,7 @@ footer {
         width: 100%;
         border-radius: 0em;
     }
-    #listes_activite_ordinateur, #listes_activite_tablette {
-        display : none;
-    }
-    #listes_activite_portable {
+    #listes_activite {
         flex-direction : column;
         width : 100%;
     }
@@ -485,16 +482,12 @@ footer {
         display:none;
     }
     .Activites_a_Marseille_Grande >img, .Activites_a_Marseille_Moyenne > img, .Activites_a_Marseille_Petite > img {
-        max-height: 75%;
         min-height: 75%;
     }
     #Inscription_Petite_Resolution {
         display: none;
     }
-    #listes_activite_portable, #listes_activite_ordinateur {
-        display : none;
-    }
-    #listes_activite_tablette {
+    #listes_activite {
         display: flex;
         flex-wrap: wrap;
         width : 100%;
@@ -538,7 +531,7 @@ footer {
     .Hotel_Card_container {
         margin: 20px 20px 20px 0px;
     }
-    #listes_activites {
+    #listes_activite {
         flex-flow: column wrap;
         height: 470px;
         align-items: center;
@@ -547,10 +540,7 @@ footer {
     #icone_bouton_rechercher {
         display:none;
     }
-    #Inscription_Petite_Resolution {
-        display: none;
-    }
-    #listes_activite_ordinateur {
+    #listes_activite {
         display : flex;
         max-width: 1440px;
     }
@@ -559,9 +549,6 @@ footer {
         align-items: stretch;
         justify-content: space-between;
         height: 100%;
-    }
-    #listes_activite_tablette, #listes_activite_portable {
-        display : none;
     }
 }
 
