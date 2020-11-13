@@ -9,6 +9,7 @@ body {
     font-family: "Raleway", "calibri", sans-serif;
     color: #696969;
     width: 100%;
+    max-width: 100%;
     margin: 0px;
     padding: 8px;
 }
@@ -38,6 +39,9 @@ figure {
 }
 figcaption {
     margin: 7px 7px 0px 0px;
+}
+img {
+    object-fit: cover;
 }
 nav,
 nav ul,
@@ -390,7 +394,7 @@ footer {
     flex-wrap: wrap;
     align-items: start;
     justify-content: left;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 0px 0px;
 }
 .footer_titre {
     flex-direction: column;
@@ -407,7 +411,6 @@ footer {
     /* Organisation de la bannière */
     .Banniere {
         border-bottom: solid 2px #f2f2f2;
-        padding-bottom: 10px;
     }
     #banniere_1 {
         flex-direction: column;
@@ -417,17 +420,12 @@ footer {
     #banniere_2 {
         flex-direction: column-reverse;
         flex: auto;
-        align-items: initial;
     }
     .Ancres:hover {
         border-bottom: solid 2px #0065fc;
         border-top: none !important;
         padding-top: 0px;
-        padding-bottom: 10px;
-    }
-    .Ancres {
-        padding: 10px 20px 10px 20px;
-        border-bottom: solid 2px #f2f2f2;
+        padding-bottom: 5px;
     }
     #Inscription {
         align-items: center;
