@@ -62,18 +62,18 @@ figcaption,
 #Information,
 #section_hebergements,
 #populaire_container,
-.Hotel_Card_container,
-.Hotel_Card_container_populaire,
+.Hotel_Card_container > a,
+.Hotel_Card_container_populaire > a,
 .Hotel_Card_txt,
 .Hotel_Card_txt_populaire,
 #populaire_titre,
 .Hotel_Cards_Wrap_Container,
 .Hotel_Card_Wrap_Container_populaire,
 .Notation_Container,
-.Activites_a_Marseille_Grande,
+.Activites_a_Marseille_Grande > a,
 .activite_marseille_pc,
-.Activites_a_Marseille_Moyenne,
-.Activites_a_Marseille_Petite,
+.Activites_a_Marseille_Moyenne > a,
+.Activites_a_Marseille_Petite > a,
 #Activite_titre,
 #listes_activites,
 .activite_tablette,
@@ -244,7 +244,7 @@ main {
     border-radius: 1em;
     padding: 20px;
 }
-.Hotel_Card_container {
+.Hotel_Card_container > a {
     flex-direction: column;
     align-items: flex-start;
     background-color: #fff;
@@ -255,7 +255,7 @@ main {
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
 }
-.Hotel_Card_container_populaire {
+.Hotel_Card_container_populaire > a {
     align-items: center;
     background-color: #fff;
     border: solid 7px #fff;
@@ -297,7 +297,11 @@ main {
 }
 .Hotel_Card_img_container_populaire {
     display: flex;
+    object-fit: cover;
     height: 100%;
+}
+.Hotel_Card_img_container {
+    object-fit: cover;
 }
 
 /* Au passage de la souris */
@@ -336,7 +340,7 @@ main {
 .Activites_txt {
     margin: 15px;
 }
-.Activites_a_Marseille_Grande {
+.Activites_a_Marseille_Grande > a {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -345,8 +349,9 @@ main {
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
+    object-fit: cover;
 }
-.Activites_a_Marseille_Moyenne {
+.Activites_a_Marseille_Moyenne > a {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -355,8 +360,9 @@ main {
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
+    object-fit: cover;
 }
-.Activites_a_Marseille_Petite {
+.Activites_a_Marseille_Petite > a {
     flex-direction: column;
     background-color: #fff;
     border: solid 0px #fff;
@@ -365,6 +371,7 @@ main {
     justify-content: space-between;
     box-shadow: 2px 2px 10px rgb(226, 226, 226);
     overflow: hidden;
+    object-fit: cover;
 }
 #Activite_titre {
     justify-content: space-between;
@@ -449,10 +456,10 @@ footer {
         padding: 0px;
     }
 
-    .Hotel_Card_container_populaire {
+    .Hotel_Card_container_populaire > a {
         max-height: 175px;
     }
-    .Hotel_Card_container {
+    .Hotel_Card_container > a {
         max-height: 200px;
         max-width: 100% !important;
         min-width: 95%;
@@ -476,15 +483,15 @@ footer {
         padding: 20px;
     }
     /* Organisation des activité */
-    .Activites_a_Marseille_Grande,
-    .Activites_a_Marseille_Petite,
-    .Activites_a_Marseille_Moyenne {
+    .Activites_a_Marseille_Grande > a,
+    .Activites_a_Marseille_Petite > a,
+    .Activites_a_Marseille_Moyenne > a {
         margin: 20px 0px 20px 0px !important;
         height: 180px;
     }
-    .Activites_a_Marseille_Grande > img,
-    .Activites_a_Marseille_Moyenne > img,
-    .Activites_a_Marseille_Petite > img {
+    .Activites_a_Marseille_Grande > a > img,
+    .Activites_a_Marseille_Moyenne > a > img,
+    .Activites_a_Marseille_Petite > a > img {
         max-height: 134px;
     }
     #Marseille_container {
@@ -520,14 +527,14 @@ footer {
         border-radius: 0em;
         max-width: 100%;
     }
-    .Hotel_Card_container {
+    .Hotel_Card_container > a {
         width: 100%;
         margin: 5px;
     }
     .Hotel_Card_img_container {
         min-width: 100%;
     }
-    .Hotel_Card_container_populaire {
+    .Hotel_Card_container_populaire > a {
         max-height: 175px;
         max-width: 325px;
     }
@@ -545,9 +552,9 @@ footer {
     #icone_bouton_rechercher {
         display: none;
     }
-    .Activites_a_Marseille_Grande > img,
-    .Activites_a_Marseille_Moyenne > img,
-    .Activites_a_Marseille_Petite > img {
+    .Activites_a_Marseille_Grande > a > img,
+    .Activites_a_Marseille_Moyenne > a > img,
+    .Activites_a_Marseille_Petite > a > img {
         min-height: 75%;
     }
     #Inscription_Petite_Resolution {
@@ -574,19 +581,19 @@ footer {
         min-width: 450px;
         padding: 20px;
     }
-    .Activites_a_Marseille_Petite {
+    .Activites_a_Marseille_Petite > a {
         height: 170px;
     }
-    .Activites_a_Marseille_Petite > img {
+    .Activites_a_Marseille_Petite > a > img {
         height: 115px;
     }
     .Activites_txt {
         height: 25px;
     }
-    .Activites_a_Marseille_Moyenne {
+    .Activites_a_Marseille_Moyenne > a {
         height: 220px;
     }
-    .Activites_a_Marseille_Moyenne > img {
+    .Activites_a_Marseille_Moyenne > a > img {
         height: 100%;
         max-width: 300px;
     }
@@ -594,7 +601,7 @@ footer {
         width: 20%;
         min-width: 350px;
     }
-    .Hotel_Card_container {
+    .Hotel_Card_container > a {
         margin: 10px 10px 10px 0px;
     }
     #listes_activite {
