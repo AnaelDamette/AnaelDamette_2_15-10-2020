@@ -119,9 +119,9 @@ main {
     height: 100px;
     flex-wrap: wrap;
 }
-.Ancres,
 .Inscription {
     height: 45px;
+    align-items: flex-end;
 }
 
 
@@ -424,6 +424,9 @@ footer {
         border-top: none !important;
         padding-top: 0px;
         padding-bottom: 5px;
+    }
+    .Ancres {
+        padding :0px 20px 0px 20px;
     }
     .Inscription {
         align-items: center;
