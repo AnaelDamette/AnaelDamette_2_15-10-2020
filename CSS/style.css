@@ -11,7 +11,6 @@ body {
     width: 100%;
     max-width: 100%;
     margin: 0px;
-    padding: 8px;
 }
 h1,
 h2,
@@ -260,7 +259,6 @@ main {
     overflow: hidden;
 }
 .Hotel_Card_container_populaire > a {
-    align-items: center;
     background-color: #fff;
     border: solid 7px #fff;
     border-radius: 1em;
@@ -475,7 +473,7 @@ footer {
         width: 100%;
     }
     .Hotels_container {
-        padding: 0px;
+        padding: 20px;
     }
     #populaire_container {
         padding: 20px;
@@ -503,6 +501,9 @@ footer {
     #listes_activite {
         flex-direction: column;
         width: 100%;
+    }
+    #section_activites {
+        padding : 20px;
     }
 }
 
